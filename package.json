@@ -1,0 +1,37 @@
+{
+  "name": "rollup-plugin-clean2",
+  "version": "1.0.0",
+  "description": "Clean up specified directories before rollup rebuild",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "prepublish": "npm run build"
+  },
+  "keywords": ["rollup", "plugin", "clean", "rollup-plugin-clean"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinsurs/rollup-plugin-clean.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vinsurs/rollup-plugin-clean/issues"
+  },
+  "homepage": "https://github.com/vinsurs/rollup-plugin-clean#readme",
+  "author": "vinsurs <2407232109@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^22.1.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.20.0",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
+  }
+}
